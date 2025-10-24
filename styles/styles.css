@@ -11,12 +11,12 @@ body{
 
 header{
     background-color: black;
-    height: 10vh;
+    /* height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 0; */
 }
 
 /* .container-fluid{
@@ -56,8 +56,8 @@ li{
     color: gold;
 }
 
-.navbar-collapse{
-    flex-grow: 0;
+.nav-link:hover{
+    color: crimson;
 }
 
 .home{
@@ -107,6 +107,7 @@ footer{
 
 .albumes iframe{
     width: 25vw;
+    height: 400px;
     border: 2px solid white;
 }
 
@@ -131,7 +132,7 @@ footer{
     column-gap: 150px;
 }
 
-.card{
+.met-card{
     padding: 10px;
     width: 30vw;
     border: 2px solid white;
@@ -160,8 +161,8 @@ footer{
     "g2 g2 g3 g3"
     "g4 g4 g4 g4"
     "g4 g4 g4 g4"
-    ". g5 g5 ."
-    ". g5 g5 ."
+    "g5 g5 g5 g5"
+    "g5 g5 g5 g5"
     "lu g6 g6 rt"
     "lu g6 g6 rt"
     "g7 g7 g9 g9"
@@ -189,7 +190,7 @@ footer{
 
 .g1{
     grid-area: g1;
-    width: 45vw;
+    width: 30vw;
 }
 .g2{
     grid-area: g2;
@@ -271,7 +272,7 @@ textarea{
 }
 
 @media (min-width: 320px) and (max-width: 430px){
-    header{
+    /* header{
         height: auto;
         display: grid;
         grid-template-areas:
@@ -289,6 +290,11 @@ textarea{
     }
     nav{
         grid-area: nav;
+    } */
+
+    .navbar-collapse{
+        flex-basis: 100%;
+        flex-grow: 1;
     }
 
     .methome{
@@ -336,7 +342,7 @@ textarea{
         width: 80vw;
     }
 
-    .card{
+    .met-card{
         width: 75vw;
     }
     .bio{
