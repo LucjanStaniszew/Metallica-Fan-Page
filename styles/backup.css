@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+*{
+    font-family: Metal Mania;
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    /* height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0; */
+}
+
+/* .container-fluid{
+    background-color: black;
+} */
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+.lista li{
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.logo{
+    height: 8vh;
+    width: auto;
+}
+
+.titulo{
+    height: 10vh;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navbar-nav .nav-link.active{
+    text-decoration: none;
+    color: gold;
+}
+
+.nav-link:hover{
+    color: crimson;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.methome{
+    height: auto;
+    width: 50vw;
+}
+
+.desc{
+    width: 50vw;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rrss{
+    height: 5vh;
+    width: auto;
+}
+
+.whatsapp{
+    height: 5vh;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Albumes */
+
+.albumes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.albumes iframe{
+    width: 25vw;
+    height: 400px;
+    border: 2px solid white;
+}
+
+
+/* Integrantes */
+
+.int-main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.metallica{
+    width: 60vw;
+    height: auto;
+}
+
+.int-main section{
+    display: flex;
+    column-gap: 150px;
+}
+
+.met-card{
+    padding: 10px;
+    width: 30vw;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio{
+    height: auto;
+    width: 15vw;
+}
+
+/* Galería */
+
+.gal-main{
+    margin-top: 25px;
+    display: grid;
+    grid-template-areas:
+    /* g1-9 y 4 artistas */
+    "jh g1 g1 kh"
+    "jh g1 g1 kh"
+    "g2 g2 g3 g3"
+    "g2 g2 g3 g3"
+    "g4 g4 g4 g4"
+    "g4 g4 g4 g4"
+    "g5 g5 g5 g5"
+    "g5 g5 g5 g5"
+    "lu g6 g6 rt"
+    "lu g6 g6 rt"
+    "g7 g7 g9 g9"
+    "g7 g7 g9 g9"
+    "g8 g8 g8 g8"
+    "g8 g8 g8 g8"
+    ;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.art{
+    width: 20vw;
+    border-radius: 15px;
+}
+.full{
+    width: 80vw;
+    border-radius: 25px;
+}
+.gal{
+    width: 45vw;
+    border-radius: 20px;
+}
+
+.g1{
+    grid-area: g1;
+    width: 30vw;
+}
+.g2{
+    grid-area: g2;
+}
+.g3{
+    grid-area: g3;
+}
+.g4{
+    grid-area: g4;
+}
+.g5{
+    grid-area: g5;
+}
+.g6{
+    grid-area: g6;
+}
+.g7{
+    grid-area: g7;
+}
+.g8{
+    grid-area: g8;
+}
+.g9{
+    grid-area: g9;
+}
+.james{
+    grid-area: jh;
+}
+.kirk{
+    grid-area: kh;
+}
+.lars{
+    grid-area: lu;
+}
+.rob{
+    grid-area: rt;
+}
+
+/* Contacto */
+
+.cont-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form{
+    width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    order: 2;
+}
+
+.form div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.orion{
+    order: 1;
+}
+.fwtbt{
+    order: 3;
+}
+
+iframe{
+    width: 30vw;
+}
+
+input{
+    color: black;
+}
+
+textarea{
+    margin-top: 10px;
+    height: 10vh;
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    /* header{
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        "l t"
+        "nav nav"
+        ;
+        justify-items: center;
+        align-items: center;
+    }
+    .el{
+        grid-area: l;
+    }
+    .titulo{
+        grid-area: t;
+    }
+    nav{
+        grid-area: nav;
+    } */
+
+    .navbar-collapse{
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .methome{
+        width: 80vw;
+        height: auto;
+    }
+
+    .desc{
+        width: 80vw;
+    }
+
+    footer{
+        display: grid;
+        grid-template-areas:
+        "dd oo"
+        "rs rs"
+        ;
+        justify-items: center;
+        align-items: center;
+        column-gap: 20px;
+        text-align: center;
+    }
+    .der{
+        grid-area: dd;
+    }
+    .own{
+        grid-area: oo;
+    }
+    .rs{
+        grid-area: rs;
+    }
+
+    /* ALBUMES */
+
+    .albumes{
+        flex-flow: column wrap;
+    }
+    .albumes iframe{
+        width: 75vw;
+    }
+
+    /* INTEGRANTES */
+
+    .metallica{
+        width: 80vw;
+    }
+
+    .met-card{
+        width: 75vw;
+    }
+    .bio{
+        width: 60vw;
+    }
+    .int-main section{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    /* GALERÍA */
+
+    .gal-main{
+        grid-template-areas:
+        "jh kh"
+        "lu rt"
+        "g1 g1"
+        "g2 g2"
+        "g3 g3"
+        "g4 g4"
+        "g5 g5"
+        "g6 g6"
+        "g7 g7"
+        "g9 g9"
+        "g8 g8"
+        ;
+    }
+    .art{
+        width: 45vw;
+    }
+    .full, .gal{
+        width: 90vw;
+    }
+
+    /* CONTACTO */
+
+    .cont-main{
+        flex-flow: column wrap;
+    }
+    .form{
+        width: 80vw;
+        order: 1;
+    }
+    .cont-main iframe{
+        width: 75vw;
+    }
+    .orion{
+        order: 2;
+    }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+$fuente: Metal Mania;
+$background: black;
+$fuente-primaria: whitesmoke;
+$fuente-secundaria: gold;
+$fuente-hover: crimson;
+$ancho50: 50vw;
+
+*{
+    font-family: $fuente;
+    color: $fuente-primaria;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background;
+}
+
+// MIXINS
+
+@mixin flex($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+// MIXIN RESPONSIVE
+
+@mixin mobile{
+    @media (min-width: 320px) and (max-width: 430px){
+        @content;
+    }
+}
+
+// EXTENDS
+
+%card-int{
+    padding: 10px;
+    width: 30vw;
+    border: 2px solid $fuente-primaria;
+    border-radius: 25px;
+    @include flex(column, center, center, wrap);
+    h2, h3{
+        color: $fuente-primaria;
+    }
+    .bio{
+            height: auto;
+            width: 15vw;
+        }
+}

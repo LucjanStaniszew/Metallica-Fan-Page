@@ -1,0 +1,50 @@
+@use "variables" as v;
+
+.int-main{
+    @include v.flex(column, center, center, wrap);
+    row-gap: 20px;
+    .metallica{
+        width: 60vw;
+        height: auto;
+    }
+    .lu{
+        @extend %card-int;
+    }
+    .jh{
+        @extend %card-int;
+        h2, h3{
+            color: green;
+        }
+    }
+    .kh{
+        @extend %card-int;
+        h2,h3{
+            color: v.$fuente-secundaria;
+        }
+    }
+    .rt{
+        @extend %card-int;
+        h2,h3{
+            color: v.$fuente-hover;
+        }
+    }
+    section{
+        display: flex;
+        column-gap: 150px;
+    }
+    @include v.mobile{
+        .metallica{
+            width: 80vw;
+        }
+        .met-card{
+            width: 75vw;
+            .bio{
+                width: 60vw;
+            }
+        }
+        section{
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}

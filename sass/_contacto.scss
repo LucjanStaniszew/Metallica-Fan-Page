@@ -1,0 +1,62 @@
+@use "variables" as v;
+
+.cont-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    .form{
+        width: 30vw;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 15px;
+        order: 2;
+        div{
+            @include v.flex(row, space-around, center, wrap);
+            .btn-form{
+            padding: 10px;
+            background-color: v.$background;
+            color: v.$fuente-hover;
+            border: 2px solid v.$fuente-primaria;
+            border-radius: 10px;
+        }:hover{
+            color: v.$fuente-secundaria;
+            cursor: pointer;
+        }
+        }
+        input{
+            color: v.$background;
+        }
+        textarea{
+            margin-top: 10px;
+            height: 10vh;
+        }
+        
+    }
+    .orion{
+        order: 1;
+    }
+    .fwtbt{
+        order: 3;
+    }
+    iframe{
+        width: 30vw;
+    }
+
+    @include v.mobile{
+        flex-direction: column;
+        .form{
+            width: 80vw;
+            order: 1;
+        }
+        iframe{
+            width: 75vw;
+        }
+        .orion{
+            order: 2;
+        }
+        .fwtbt{
+            order: 3;
+        }
+    }
+}

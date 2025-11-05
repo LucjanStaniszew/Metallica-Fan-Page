@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+footer{
+    height: 10vh;
+    @include v.flex(row, space-around, center, wrap);
+    ul{
+        display: flex;
+        gap: 20px;
+        li{
+            list-style: none;
+        }
+    }
+    .rrss{
+        height: 5vh;
+        width: auto;
+    }
+    .whatsapp{
+        height: 5vh;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+    @include v.mobile{
+        display: grid;
+        grid-template-areas:
+        "dd oo"
+        "rs rs"
+        ;
+        justify-items: center;
+        align-items: center;
+        column-gap: 20px;
+        text-align: center;
+        .der{
+            grid-area: dd;
+        }
+        .own{
+            grid-area: oo;
+        }
+        .rs{
+            grid-area: rs;
+        }
+    }
+}

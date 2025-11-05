@@ -1,0 +1,34 @@
+// Aca va a ir todo el codigo de css y sass de mi header y su responsive
+@use "variables" as v;
+
+header{
+    background-color: v.$background;
+    position: sticky;
+    top: 0;
+    .logo{
+        height: 8vh;
+        width: auto;
+    }
+    .titulo{
+        height: 10vh;
+        width: auto;
+    }
+    .navbar-nav{
+        .nav-link{
+            text-decoration: none;
+            color: v.$fuente-primaria;
+        }:hover{
+                color: v.$fuente-hover;
+            }
+        .nav-link.active{
+            text-decoration: none;
+            color: v.$fuente-secundaria;
+        }
+    }
+    @include v.mobile{
+        .navbar-collapse{
+            flex-basis: 100%;
+            flex-grow: 1;
+        }
+    }
+}

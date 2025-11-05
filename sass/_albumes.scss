@@ -1,0 +1,17 @@
+@use "variables" as v;
+
+.albumes{
+    @include v.flex(row, space-around, center, wrap);
+    row-gap: 20px;
+    iframe{
+        width: 25vw;
+        height: 400px;
+        border: 2px solid v.$fuente-primaria;
+    }
+    @include v.mobile{
+        flex-direction: column;
+        iframe{
+            width: 75vw;
+        }
+    }
+}
