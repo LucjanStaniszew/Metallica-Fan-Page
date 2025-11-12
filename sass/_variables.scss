@@ -37,6 +37,12 @@ body{
     }
 }
 
+@mixin tablet{
+    @media (min-width: 431px) and (max-width: 968px){
+        @content;
+    }
+}
+
 // EXTENDS
 
 %card-int{

@@ -76,7 +76,7 @@ footer ul {
 footer ul li {
   list-style: none;
 }
-footer .rrss {
+footer ul li .rrss {
   height: 5vh;
   width: auto;
 }
@@ -85,6 +85,7 @@ footer .whatsapp {
   position: fixed;
   bottom: 50px;
   right: 50px;
+  animation: whats 1s infinite ease-in-out;
 }
 @media (min-width: 320px) and (max-width: 430px) {
   footer {
@@ -106,6 +107,23 @@ footer .whatsapp {
   }
 }
 
+@keyframes whats {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -172,6 +190,9 @@ footer .whatsapp {
 }
 .int-main .rt h2, .int-main .rt h3 {
   color: crimson;
+}
+.int-main .rt .bio {
+  width: 30vw;
 }
 .int-main section {
   display: flex;
