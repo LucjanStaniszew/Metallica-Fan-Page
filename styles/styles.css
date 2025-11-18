@@ -28,6 +28,7 @@ body {
 .int-main .lu .bio, .int-main .jh .bio, .int-main .kh .bio, .int-main .rt .bio {
   height: auto;
   width: 15vw;
+  border-radius: 15px;
 }
 
 header {
@@ -190,9 +191,6 @@ footer .whatsapp {
 }
 .int-main .rt h2, .int-main .rt h3 {
   color: crimson;
-}
-.int-main .rt .bio {
-  width: 30vw;
 }
 .int-main section {
   display: flex;
