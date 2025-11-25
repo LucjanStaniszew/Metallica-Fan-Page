@@ -5,7 +5,7 @@ footer {
     @include v.flex(row, space-around, center, wrap);
     ul {
         display: flex;
-        gap: 20px;
+        gap: 30px;
         li {
             list-style: none;
             .rrss {
@@ -21,7 +21,20 @@ footer {
         right: 50px;
         animation: whats 1s infinite ease-in-out;
     }
-
+    @include v.tablet{
+        display: grid;
+        grid-template-areas: "dd oo" "rs rs";
+        justify-items: center;
+        .der{
+            grid-area: dd;
+        }
+        .own{
+            grid-area: oo;
+        }
+        .rs{
+            grid-area: rs;
+        }
+    }
     @include v.mobile {
         display: grid;
         grid-template-areas:

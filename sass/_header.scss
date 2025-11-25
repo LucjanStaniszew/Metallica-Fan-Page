@@ -5,6 +5,7 @@ header{
     background-color: v.$background;
     position: sticky;
     top: 0;
+    z-index: 10;
     .logo{
         height: 8vh;
         width: auto;

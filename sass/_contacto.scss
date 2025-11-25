@@ -42,7 +42,36 @@
     iframe{
         width: 30vw;
     }
-
+    @include v.tablet{
+        display: grid;
+        grid-template-areas:
+        "con con" "or fw";
+        justify-items: center;
+        align-items: center;
+        .form{
+            width: 80vw;
+            grid-area: con;
+            align-items: center;
+            input{
+                width: 50vw;
+            }
+            div{
+                column-gap: 30px;
+                input{
+                    width: 15vw;
+                }
+            }
+        }
+        .orion{
+            grid-area: or;
+        }
+        .fwtbt{
+            grid-area: fw;
+        }
+        iframe, textarea{
+            width: 45vw;
+        }
+    }
     @include v.mobile{
         flex-direction: column;
         .form{

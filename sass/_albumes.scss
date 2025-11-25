@@ -8,6 +8,11 @@
         height: 400px;
         border: 2px solid v.$fuente-primaria;
     }
+    @include v.tablet{
+        iframe{
+            width: 45vw;
+        }
+    }
     @include v.mobile{
         flex-direction: column;
         iframe{

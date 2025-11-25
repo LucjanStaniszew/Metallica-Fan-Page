@@ -74,7 +74,23 @@
     .rob {
         grid-area: rt;
     }
-
+    @include v.tablet{
+        grid-template-areas:
+        "jh kh lu rt"
+        "g1 g1 g2 g2"
+        "g1 g1 g2 g2"
+        "g3 g3 g6 g6"
+        "g3 g3 g6 g6"
+        "g4 g4 g4 g4"
+        "g4 g4 g4 g4"
+        "g5 g5 g5 g5"
+        "g5 g5 g5 g5"
+        "g7 g7 g9 g9"
+        "g7 g7 g9 g9"
+        "g8 g8 g8 g8"
+        "g8 g8 g8 g8"
+        ;
+    }
     @include v.mobile{
         grid-template-areas:
         "jh kh"

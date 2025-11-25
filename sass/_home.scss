@@ -9,6 +9,11 @@
     .desc{
         width: v.$ancho50;
     }
+    @include v.tablet{
+        .desc{
+            width: 80vw;
+        }
+    }
     @include v.mobile{
         .methome{
             width: 80vw;

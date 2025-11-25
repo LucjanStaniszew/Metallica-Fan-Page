@@ -32,6 +32,34 @@
         display: flex;
         column-gap: 150px;
     }
+    @include v.tablet{
+        display: grid;
+        grid-template-areas:
+        "met met" "guitar guitar" "bat bass";
+        justify-items: center;
+        align-items: center;
+        .met-card{
+            width: 35vw;
+            .bio{
+                width: 25vw;
+            }
+        }
+        .metallica{
+            width: 80vw;
+            grid-area: met;
+        }
+        section{
+            grid-area: guitar;
+            column-gap: 50px;
+            // justify-content: space-around;
+        }
+        .lu{
+            grid-area: bat;
+        }
+        .rt{
+            grid-area: bass;
+        }
+    }
     @include v.mobile{
         .metallica{
             width: 80vw;
